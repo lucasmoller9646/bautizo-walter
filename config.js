@@ -10,7 +10,7 @@
  * assets/js/i18n.js (português).
  */
 window.BAUTISMO_CONFIG = {
-  endpoint: "",
+  endpoint: "https://script.google.com/macros/s/AKfycbwJYBT02wjakcQuPmUuEtm5NaGWbx8ALDDqGOgdTdRNHigjpUx14XhEBS9wlPxZWpHa/exec",
 
   // prazo de confirmação (horário do Paraguai, UTC-3)
   plazo: "2026-10-30T23:59:00-03:00",
