@@ -11,7 +11,7 @@
  *           (O cardápio exibido na página fica no index.html e no i18n.js.)
  */
 window.BAUTISMO_CONFIG = {
-  endpoint: "",
+  endpoint: "https://script.google.com/macros/s/AKfycbyht39ReM0aT3q0Kd2aiYQngcryWR_JXwcIU1bM6lWp7JztBQBUw1a066Y274k4o2ZODA/exec",
 
   // prazo de confirmação (horário do Paraguai, UTC-3)
   plazo: "2026-10-29T23:59:00-03:00",
