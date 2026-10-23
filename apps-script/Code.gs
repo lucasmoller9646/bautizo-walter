@@ -24,8 +24,8 @@ var HOJA_INVITADOS = 'Invitados';
 var HOJA_RESUMEN = 'Resumen';
 
 var COLS_RESPUESTAS = ['Recibido', 'Estado', 'Responsable', 'WhatsApp', 'Asiste', 'Misa', 'Fiesta',
-  'Adultos', 'Niños', 'Total personas', 'Platos', 'Idioma', 'Clave', 'ID'];
-var COLS_INVITADOS = ['Recibido', 'Estado', 'Nombre', 'Tipo', 'Edad', 'Plato', 'Misa', 'Fiesta', 'Responsable', 'Clave', 'ID'];
+  'Adultos', 'Niños', 'Total personas', 'Idioma', 'Clave', 'ID'];
+var COLS_INVITADOS = ['Recibido', 'Estado', 'Nombre', 'Tipo', 'Edad', 'Misa', 'Fiesta', 'Responsable', 'Clave', 'ID'];
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
@@ -55,18 +55,14 @@ function doPost(e) {
     marcarReemplazadas_(resp, clave, COLS_RESPUESTAS.indexOf('Clave') + 1);
     marcarReemplazadas_(inv, clave, COLS_INVITADOS.indexOf('Clave') + 1);
 
-    var platos = {};
-    personas.forEach(function (p) { if (p && p.plato) platos[p.plato] = (platos[p.plato] || 0) + 1; });
-    var textoPlatos = Object.keys(platos).map(function (k) { return k + ': ' + platos[k]; }).join(' · ');
-
     resp.appendRow([ahora, 'vigente', responsable, telefono, asiste ? 'Sí' : 'No', misa ? 'Sí' : 'No', fiesta ? 'Sí' : 'No',
-      adultos, ninos, adultos + ninos, textoPlatos, data.idioma === 'pt' ? 'PT' : 'ES', clave, id]);
+      adultos, ninos, adultos + ninos, data.idioma === 'pt' ? 'PT' : 'ES', clave, id]);
 
     if (personas.length) {
       var filas = personas.map(function (p) {
         var nino = p.tipo === 'Niño';
         return [ahora, 'vigente', limpiar_(p.nombre, 80), nino ? 'Niño' : 'Adulto', nino ? limpiar_(p.edad, 20) : '',
-          fiesta ? limpiar_(p.plato, 80) : '', misa ? 'Sí' : 'No', fiesta ? 'Sí' : 'No', responsable, clave, id];
+          misa ? 'Sí' : 'No', fiesta ? 'Sí' : 'No', responsable, clave, id];
       });
       inv.getRange(inv.getLastRow() + 1, 1, filas.length, filas[0].length).setValues(filas);
     }
@@ -123,8 +119,8 @@ function prepararResumen_(sh) {
     ['Personas en la misa', '=SUMIFS(' + R + 'J:J,' + vig + ',' + R + 'F:F,"Sí")'],
     ['Personas en la fiesta', '=SUMIFS(' + R + 'J:J,' + vig + ',' + R + 'G:G,"Sí")'],
     ['', ''],
-    ['Platos (solo quienes van a la fiesta)', ''],
-    ['', '=IFERROR(QUERY(' + I + 'A:K,"select F, count(C) where B = \'vigente\' and F <> \'\' group by F label count(C) \'Cantidad\'",1),"Todavía no hay platos")']
+    ['Niños y sus edades', ''],
+    ['', '=IFERROR(QUERY(' + I + 'A:J,"select C, E, H where B = \'vigente\' and D = \'Niño\' label C \'Niño\', E \'Edad\', H \'Familia\'",1),"Todavía no hay niños confirmados")']
   ];
   sh.getRange(1, 1, filas.length, 2).setValues(filas);
   sh.getRange('A1').setFontSize(14).setFontWeight('bold');

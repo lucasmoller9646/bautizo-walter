@@ -4,7 +4,6 @@
 
   var CFG = window.BAUTISMO_CONFIG || {};
   var I18N = window.I18N || { pt: {}, ui: { es: {}, pt: {} } };
-  var PLATOS = CFG.platos || [];
   var MAX = CFG.maxPorTipo || 12;
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -246,16 +245,12 @@
   function attending() { return selected("asiste") === "si"; }
   function event() { return selected("evento") || "ambos"; }
   function goesToParty() { return attending() && event() !== "misa"; }
-  function platoLabel(id) {
-    for (var i = 0; i < PLATOS.length; i++) if (PLATOS[i].id === id) return PLATOS[i][lang] || PLATOS[i].es;
-    return id;
-  }
 
   function syncPeople() {
     var adults = rsvp.people.filter(function (p) { return p.tipo === "adulto"; });
     var kids = rsvp.people.filter(function (p) { return p.tipo === "nino"; });
-    while (adults.length < rsvp.adults) adults.push({ tipo: "adulto", nombre: "", plato: "" });
-    while (kids.length < rsvp.kids) kids.push({ tipo: "nino", nombre: "", plato: "", edad: "" });
+    while (adults.length < rsvp.adults) adults.push({ tipo: "adulto", nombre: "" });
+    while (kids.length < rsvp.kids) kids.push({ tipo: "nino", nombre: "", edad: "" });
     adults.length = rsvp.adults; kids.length = rsvp.kids;
     rsvp.people = adults.concat(kids);
     if (!rsvp.nameTouched && rsvp.people[0]) rsvp.people[0].nombre = $("#f-nombre").value.trim();
@@ -315,39 +310,6 @@
         li.appendChild(ag);
       }
 
-      var fs = document.createElement("div");
-      fs.className = "dish";
-      var lg = document.createElement("label");
-      lg.htmlFor = "d-" + i;
-      lg.textContent = ui("dish_legend");
-      var sel = document.createElement("select");
-      sel.id = "d-" + i;
-      sel.setAttribute("aria-label", tag + ": " + ui("dish_legend"));
-      var ph = document.createElement("option");
-      ph.value = ""; ph.textContent = ui("dish_choose");
-      sel.appendChild(ph);
-      var groups = CFG.grupos && CFG.grupos.length ? CFG.grupos : [{ id: null }];
-      groups.forEach(function (g) {
-        var parent = sel;
-        if (g.id) {
-          parent = document.createElement("optgroup");
-          parent.label = g[lang] || g.es;
-          sel.appendChild(parent);
-        }
-        PLATOS.filter(function (pl) { return !g.id || pl.grupo === g.id; }).forEach(function (pl) {
-          var o = document.createElement("option");
-          o.value = pl.id; o.textContent = pl[lang] || pl.es;
-          if (p.plato === pl.id) o.selected = true;
-          parent.appendChild(o);
-        });
-      });
-      sel.addEventListener("change", function () {
-        p.plato = sel.value;
-        sel.removeAttribute("aria-invalid");
-        updateTally(); clearError("personas");
-      });
-      fs.appendChild(lg); fs.appendChild(sel);
-      li.appendChild(fs);
       list.appendChild(li);
     });
     rsvp.animateNext = false;
@@ -378,12 +340,6 @@
     var total = rsvp.adults + rsvp.kids;
     big.textContent = String(total);
     var line = (total === 1 ? ui("person") : ui("people")) + " · " + countLine(rsvp.adults, rsvp.kids) + " · " + ui("ev_" + event());
-    if (goesToParty()) {
-      var counts = {};
-      rsvp.people.forEach(function (p) { if (p.plato) counts[p.plato] = (counts[p.plato] || 0) + 1; });
-      var dishes = PLATOS.filter(function (pl) { return counts[pl.id]; }).map(function (pl) { return platoLabel(pl.id) + ": " + counts[pl.id]; });
-      if (dishes.length) line += " · " + dishes.join(", ");
-    }
     small.textContent = line;
   }
 
@@ -402,10 +358,9 @@
     if (!a) { setError("asiste", ui("err_attend")); ok = false; first = first || form.querySelector('input[name="asiste"]'); }
     else clearError("asiste");
     if (a === "si") {
-      var missingName = -1, missingDish = -1, missingAge = -1;
+      var missingName = -1, missingAge = -1;
       rsvp.people.forEach(function (p, i) {
         if (!p.nombre.trim() && missingName < 0) missingName = i;
-        if (goesToParty() && !p.plato && missingDish < 0) missingDish = i;
         if (p.tipo === "nino" && !p.edad && missingAge < 0) missingAge = i;
       });
       if (missingName >= 0) {
@@ -414,9 +369,6 @@
       } else if (missingAge >= 0) {
         setError("personas", ui("err_age")); ok = false;
         var asel = $("#a-" + missingAge); if (asel) { asel.setAttribute("aria-invalid", "true"); first = first || asel; }
-      } else if (missingDish >= 0) {
-        setError("personas", ui("err_dish")); ok = false;
-        var ds = $("#d-" + missingDish); if (ds) { ds.setAttribute("aria-invalid", "true"); first = first || ds; }
       } else clearError("personas");
     }
     if (first) first.focus({ preventScroll: false });
@@ -443,7 +395,7 @@
       adultos: a ? rsvp.adults : 0,
       ninos: a ? rsvp.kids : 0,
       personas: a ? rsvp.people.map(function (p) {
-        return { nombre: p.nombre.trim(), tipo: p.tipo === "adulto" ? "Adulto" : "Niño", edad: p.tipo === "nino" ? edadEs(p.edad) : "", plato: party ? platoLabelEs(p.plato) : "" };
+        return { nombre: p.nombre.trim(), tipo: p.tipo === "adulto" ? "Adulto" : "Niño", edad: p.tipo === "nino" ? edadEs(p.edad) : "" };
       }) : []
     };
   }
@@ -451,10 +403,6 @@
     if (v === "" || v == null) return "";
     var n = parseInt(v, 10);
     return n === 0 ? "Menos de 1 año" : n + (n === 1 ? " año" : " años");
-  }
-  function platoLabelEs(id) {
-    for (var i = 0; i < PLATOS.length; i++) if (PLATOS[i].id === id) return PLATOS[i].es;
-    return id || "";
   }
 
   function send(data) {

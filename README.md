@@ -4,7 +4,7 @@ Site do batizado do Walter Möller Schilling, em espanhol e português, com a co
 
 - **Missa e Batismo:** domingo, 1º de novembro de 2026, 10h30, Parroquia de las Mercedes (Assunção)
 - **Almoço e festa:** almoço às 12h30 e café da tarde até as 18h, no Izara Barrio Privado
-- **Prazo para confirmar:** quinta-feira, 29 de outubro
+- **Prazo para confirmar:** sexta-feira, 30 de outubro
 
 O site é estático (HTML, CSS e JavaScript, sem build), feito para o GitHub Pages. Ele abre no idioma do celular do convidado; o link com `?lang=pt` força o português e `?lang=es` força o espanhol.
 
@@ -14,7 +14,7 @@ O site é estático (HTML, CSS e JavaScript, sem build), feito para o GitHub Pag
 | --- | --- |
 | `index.html` | Página completa, com os textos em espanhol |
 | `assets/js/i18n.js` | Todos os textos em português e as mensagens do formulário nos dois idiomas |
-| `config.js` | **O único arquivo que vocês precisam editar:** URL da planilha, nomes dos pratos, prazo |
+| `config.js` | **O único arquivo que vocês precisam editar:** URL da planilha e prazo |
 | `assets/css/site.css` | Estilos |
 | `assets/js/site.js` | Renda do convite, animações, agenda e formulário |
 | `assets/img/` | Fotos otimizadas (sem dados de GPS), aquarela do anjo, imagem de compartilhamento `og.jpg` |
@@ -34,15 +34,15 @@ O site é estático (HTML, CSS e JavaScript, sem build), feito para o GitHub Pag
 
 Enquanto `endpoint` estiver vazio, o formulário funciona em **modo de teste**: mostra o agradecimento, avisa que nada foi gravado e não envia nada.
 
-**Como a planilha se organiza:** cada envio vira uma linha em *Respuestas* e uma linha por pessoa em *Invitados* (com o prato de cada uma). Se a mesma família responder de novo, com o mesmo WhatsApp ou, sem WhatsApp, com o mesmo nome, as linhas anteriores ficam marcadas como `reemplazada` e o *Resumen* conta só a resposta mais recente. O *Resumen* traz famílias que vêm e que não vêm, total de pessoas, adultos, crianças, quantos vão à missa e à festa e a contagem de cada prato.
+**Como a planilha se organiza:** cada envio vira uma linha em *Respuestas* e uma linha por pessoa em *Invitados* (com a idade de cada criança). Se a mesma família responder de novo, com o mesmo WhatsApp ou, sem WhatsApp, com o mesmo nome, as linhas anteriores ficam marcadas como `reemplazada` e o *Resumen* conta só a resposta mais recente. O *Resumen* traz famílias que vêm e que não vêm, total de pessoas, adultos, crianças, quantos vão à missa e à festa e a lista das crianças com as idades.
 
 Se mudar o código do script depois, use **Implantar › Gerenciar implantações › editar › Nova versão**, para manter a mesma URL.
 
 ## 2. O cardápio
 
-O almoço segue a proposta do bufê para o dia: entrada de cremoso de coliflor, seis pratos principais (dois de cordeiro, dois de surubim e duas massas) e o café da tarde das 14h às 18h. Ao confirmar, cada pessoa escolhe um prato principal numa lista agrupada por tipo, e a escolha vai para a aba *Invitados*; o *Resumen* soma quantos pratos de cada um foram pedidos, que é o número a passar ao bufê 72 horas antes.
+O almoço segue a proposta do bufê para o dia: entrada de cremoso de coliflor, seis pratos principais (dois de cordeiro, dois de surubim e duas massas) e o café da tarde das 14h às 18h. O cardápio aparece no site só como informação; os convidados não escolhem prato. O número a passar ao bufê 72 horas antes é o total de pessoas que vão à festa, no *Resumen*.
 
-O texto do cardápio exibido na página fica no `index.html` (espanhol) e no `assets/js/i18n.js` (português). As opções do formulário ficam em `config.js`, na lista `platos`: para tirar um prato da escolha, basta apagar a linha dele ali.
+O texto do cardápio exibido na página fica no `index.html` (espanhol) e no `assets/js/i18n.js` (português). Para tirar um prato do cardápio, apague o bloco dele nos dois arquivos.
 
 ## 3. Publicar no GitHub Pages (pelo navegador, sem instalar nada)
 

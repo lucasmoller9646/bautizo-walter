@@ -15,7 +15,7 @@ window.I18N = {
     hero_where: "Às 10h30 na<br>Paróquia de las Mercedes",
     hero_after: "Terminada a cerimônia<br>esperamos vocês no Izara",
     hero_cta: "Confirmar presença",
-    hero_deadline: "até quinta-feira, 29 de outubro",
+    hero_deadline: "até sexta-feira, 30 de outubro",
     alt_angel: "Aquarela de um anjo da guarda que leva pela mão uma criança pequena descalça",
 
     santos_title: "Um dia entre todos os santos",
@@ -24,7 +24,8 @@ window.I18N = {
       "<p>Nesse dia, lembramos não só dos santos que conhecemos pelo nome, pelas imagens nas igrejas e pelas histórias que atravessaram séculos, mas também de tantos outros de quem nunca ouvimos falar. Pessoas que viveram suas vidas, muitas vezes longe dos olhos do mundo, e que hoje estão junto de Deus.</p>" +
       "<p>Há algo bonito em pensar que, no mesmo dia em que celebramos aqueles que já percorreram seu caminho de fé, Walter estará começando o seu.</p>" +
       "<p>Ainda não sabemos quais caminhos ele vai seguir, quem vai se tornar ou o que a vida reserva para ele. Mas sabemos o que desejamos: que cresça perto de Deus, cercado de amor, de fé e de bons exemplos.</p>" +
-      "<p>A santidade não é uma história que pertence apenas ao passado ou a pessoas extraordinárias. É um chamado que, pelo Batismo, também passa a fazer parte da vida dele.</p>",
+      "<p>A santidade não é uma história que pertence apenas ao passado ou a pessoas extraordinárias. É um chamado que, pelo Batismo, também passa a fazer parte da vida dele.</p>" +
+      "<p>E, entre tantos santos que vieram antes de nós, escolhemos um em especial para ser seu padroeiro: São Bento.</p>",
     alt_cuello: "Walter engatinhando na grama, com o nome bordado na gola da camisa",
     cap_cuello: "Walter, com o nome bordado na gola.",
 
@@ -54,16 +55,20 @@ window.I18N = {
     alt_padrinos: "Walter no colo do pai, ao lado da mãe e dos padrinhos, diante do bolo do seu primeiro aniversário",
     cap_padrinos: "Walter com os pais e os padrinhos, no seu primeiro aniversário.",
     padrinos_body:
-      "<p>No Batismo, os padrinhos assumem conosco o compromisso de acompanhar o Walter na fé: rezar por ele, dar-lhe bom exemplo e estar por perto ao longo da sua vida cristã.</p>" +
-      "<p>São eles que, junto conosco, vão receber a vela acesa no círio pascal.</p>",
+      "<p>O Walter já sabe muito bem quem são o dindo e a dinda. O Pedro, que não economiza beijos e carinho. A Júlia, com seu jeito meigo, sempre tão atenta e cuidadosa com ele.</p>" +
+      "<p>No dia 1º de novembro, os dois vão assumir diante de Deus o compromisso de acompanhá-lo na fé. Mas é bonito perceber que, muito antes dessa promessa, já começaram a fazer parte da vida dele com o amor, o cuidado e a presença que também fazem parte dessa missão.</p>" +
+      "<p>Escolher padrinhos é também escolher quem queremos por perto enquanto nosso filho cresce. Pessoas em quem confiamos, que admiramos e com quem queremos dividir um pouco da alegria e da responsabilidade de vê-lo crescer.</p>" +
+      "<p>Obrigada por já serem tão presentes, por todo o carinho com o Walter e por aceitarem caminhar conosco nessa missão. Que ele cresça sabendo a sorte que tem de ter vocês dois por perto.</p>",
     and: "e",
     alt_familia: "Lucas e Giovana sorriem com o Walter no colo, vestidos de branco",
 
     medal_cap: "A medalha de São Bento. Na cruz: “Crux sacra sit mihi lux, non draco sit mihi dux”, que a santa cruz seja a minha luz e o dragão não seja o meu guia.",
     benito_title: "Sob a proteção de São Bento",
     benito_p1:
-      "<p>E, entre tantos santos que vieram antes de nós, escolhemos um em especial para ser seu padroeiro: São Bento.</p>" +
-      "<p>Quando começamos a pensar em um padroeiro para o Walter, eu pensava em São Francisco. Gostava da sua relação com os animais, com a natureza, da maneira como encontrava Deus nas coisas mais simples. Foi o Lucas quem sugeriu São Bento.</p>" +
+      "<p>Se dependesse do Walter, acho que ele passaria o dia inteiro do lado de fora de casa. Tem sempre um animal para procurar, uma árvore para explorar, alguém de quem se aproximar. Gosta de gente, de bichos, de natureza. Quer conhecer tudo, tocar em tudo, participar de tudo. E tem uma vontade própria que não passa despercebida por ninguém.</p>" +
+      "<p>Talvez por isso, quando começamos a pensar em um padroeiro, eu e a Ju pensamos em São Francisco. Gostava do seu amor pelos animais, pela natureza, da maneira como encontrava Deus nas coisas mais simples. Não era difícil reconhecer um pouco do Walter ali.</p>",
+    benito_p1b:
+      "<p>Foi o Lucas quem sugeriu São Bento.</p>" +
       "<p>Um monge. Um homem que dedicou a vida à oração, ao trabalho, ao silêncio e à disciplina. Uma escolha curiosa para um menino que parece ter nascido com pressa de conhecer o mundo.</p>",
     aria_strip: "Fotos do Walter",
     alt_curioso: "Walter, de pé com um macacão listrado, tocando o pneu de uma caminhonete",
@@ -71,16 +76,17 @@ window.I18N = {
     alt_cumple: "Walter com um chapéu de aniversário com o número um",
     benito_turn: "Mas talvez fosse justamente esse o ponto.",
     benito_p2:
-      "<p>O Walter ainda é pequeno. Quer descobrir tudo, alcançar tudo, ir a todos os lugares. E nós adoramos isso nele. Mas um dia essa curiosidade vai encontrar um mundo muito maior, cheio de possibilidades, escolhas e tentações. E nós não estaremos sempre por perto para dizer o que fazer.</p>" +
-      "<p>Não sabemos quem ele vai ser. Nem queremos decidir por ele. Mas pensamos muito sobre o que gostaríamos de lhe ensinar.</p>" +
-      "<p>Que tenha coragem para conquistar o que deseja, mas saiba que nem tudo o que se pode ter vale a pena. Que não confunda o que possui com aquilo que é. Que entenda que liberdade também é saber dizer não às próprias vontades.</p>",
+      "<p>O Walter ainda é pequeno. Hoje, suas vontades são descobrir o que existe atrás de uma porta, alcançar alguma coisa que está no alto, brincar mais um pouco. E nós adoramos essa vontade toda. Mas um dia os desejos serão outros. As escolhas terão consequências maiores. Ele vai conhecer um mundo cheio de possibilidades, e nós não estaremos sempre por perto para dizer que não, não pode colocar o dedo na tomada.</p>" +
+      "<p>Não sabemos quem ele vai ser. Nem queremos decidir por ele. Mas sabemos que gostaríamos de vê-lo crescer com liberdade. E talvez uma das coisas mais difíceis de ensinar a um filho seja justamente essa: que ser livre não é poder fazer tudo aquilo que se quer.</p>",
     benito_p3:
-      "<p>Há quase mil e quinhentos anos, São Bento escreveu uma Regra que começa com uma palavra: <em>escuta</em>. Talvez não seja por acaso que, entre tantas virtudes, tenha escolhido começar por essa.</p>",
+      "<p>São Bento escreveu, há quase mil e quinhentos anos, uma Regra que começa com um pedido: <em>escuta</em>. Organizou a vida de sua comunidade em torno da oração, do trabalho, da humildade e da atenção ao outro. Ensinou que a vontade de cada um não pode estar acima de tudo. Que é preciso aprender a governar a si mesmo antes de querer governar qualquer outra coisa.</p>",
+    benito_turn2: "E foi aí que a escolha começou a fazer sentido.",
     alt_mama: "Walter sorri no colo da mãe, que encosta a testa na dele",
     benito_p4:
-      "<p>Quanto mais conhecíamos sua história, mais sentido fazia escolhê-lo. Não para que o Walter seja menos inquieto, menos curioso, menos ele. Mas para que aprenda, aos poucos, a conduzir toda essa vontade de viver.</p>" +
-      "<p>É curioso escolher um exemplo de vida para alguém que ainda está começando a sua. O Walter não sabe quem foi São Bento, nem por que o escolhemos. Um dia vamos lhe contar.</p>" +
-      "<p>Por enquanto, pedimos que São Bento interceda por ele. E que nós também saibamos aprender com o santo, porque não adianta desejar que um filho cresça com fé, humildade e sabedoria se não estivermos dispostos a cultivar essas mesmas coisas em nós.</p>",
+      "<p>Queremos que o Walter tenha coragem para conquistar o que deseja, mas saiba que nem tudo o que se pode ter vale a pena. Que não confunda o que possui com aquilo que é. Que reconheça o valor do trabalho, das pessoas e das coisas que não se compram. Que tenha força para fazer suas próprias escolhas, inclusive quando isso significar dizer não a si mesmo.</p>" +
+      "<p>Não escolhemos São Bento para que o Walter seja menos inquieto, menos curioso, menos ele. Escolhemos porque queremos que toda essa vontade de viver encontre também sabedoria para ser conduzida.</p>" +
+      "<p>São Francisco continuará presente nas histórias que vamos lhe contar, no amor pelos animais, no cuidado com a criação e na alegria das coisas simples. Esperamos que o Walter aprenda com os dois: a amar o mundo sem se deixar dominar por ele.</p>" +
+      "<p>E que nós também saibamos aprender. Porque não adianta desejar que um filho cresça com fé, humildade e sabedoria se não estivermos dispostos a cultivar essas mesmas virtudes em nós.</p>",
 
     where_title: "Quando e onde",
     where_date: "Domingo, 1º de novembro de 2026, Solenidade de Todos os Santos.",
@@ -94,7 +100,7 @@ window.I18N = {
     place2_d: "Terminada a cerimônia, esperamos vocês para celebrar juntos com um almoço. O café fica aberto até as 18h.",
 
     menu_title: "O almoço",
-    menu_lead: "Ao confirmar, cada convidado escolhe o seu prato principal.",
+    menu_lead: "O que vamos compartilhar depois da missa.",
     menu_starter: "Entrada",
     starter_n: "Creme de couve-flor",
     starter_d: "Couve-flor assada com manteiga tostada e camarões na manteiga composta.",
@@ -125,7 +131,7 @@ window.I18N = {
       "<li>Mini torta de limão com merengue italiano</li><li>Mini torta de cacau recheada com ganache e damasco</li>",
 
     rsvp_title: "Confirmação de presença",
-    rsvp_lead: "Pedimos que confirmem até <strong>quinta-feira, 29 de outubro</strong>. Basta uma resposta por família: incluam cada pessoa que vem com vocês e, se forem à festa, o prato principal que cada uma escolhe para o almoço.",
+    rsvp_lead: "Pedimos que confirmem até <strong>sexta-feira, 30 de outubro</strong>. Basta uma resposta por família: incluam o nome de cada pessoa que vem com vocês e, no caso das crianças, a idade.",
     f_name: "Nome e sobrenome",
     f_phone: "WhatsApp",
     optional: "(opcional)",
@@ -143,7 +149,7 @@ window.I18N = {
     aria_less_kids: "Menos crianças",
     aria_more_kids: "Mais crianças",
     f_people: "Quem vem",
-    f_people_hint: "Um nome por pessoa e o prato principal que cada uma escolhe.",
+    f_people_hint: "Um nome por pessoa e, para as crianças, a idade.",
     f_send: "Enviar confirmação",
     thanks_again: "Enviar outra resposta",
     foot_date: "1º de novembro de 2026"
@@ -155,14 +161,11 @@ window.I18N = {
       title: "Bautismo de Walter · 1 de noviembre de 2026",
       adult: "Adulto", kid: "Niño",
       name_ph: "Nombre y apellido",
-      dish_legend: "Plato principal",
-      dish_choose: "Elegir el plato…",
       age_label: "Edad", age_choose: "Elegir la edad…", age_under1: "Menos de 1 año", year: "año", years: "años",
       err_age: "Falta la edad de algún niño.",
       err_name: "Escriban su nombre, por favor.",
       err_attend: "Elijan una opción.",
       err_person: "Falta el nombre de alguna persona.",
-      err_dish: "Falta elegir el plato de alguna persona.",
       sending: "Enviando…",
       err_send: "No pudimos enviar la confirmación. Revisen la conexión e intenten de nuevo.",
       test_mode: "Modo de prueba: esta respuesta no se guardó porque la planilla todavía no está conectada.",
@@ -182,14 +185,11 @@ window.I18N = {
       title: "Batizado do Walter · 1º de novembro de 2026",
       adult: "Adulto", kid: "Criança",
       name_ph: "Nome e sobrenome",
-      dish_legend: "Prato principal",
-      dish_choose: "Escolher o prato…",
       age_label: "Idade", age_choose: "Escolher a idade…", age_under1: "Menos de 1 ano", year: "ano", years: "anos",
       err_age: "Falta a idade de alguma criança.",
       err_name: "Escreva o seu nome, por favor.",
       err_attend: "Escolha uma opção.",
       err_person: "Falta o nome de alguma pessoa.",
-      err_dish: "Falta escolher o prato de alguma pessoa.",
       sending: "Enviando…",
       err_send: "Não conseguimos enviar a confirmação. Verifique a conexão e tente de novo.",
       test_mode: "Modo de teste: esta resposta não foi gravada porque a planilha ainda não está conectada.",

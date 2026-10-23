@@ -598,3 +598,12 @@ input[aria-invalid="true"] { border-color: var(--error); }
 .dish select:hover, .age select:hover { border-color: #c9b597; }
 .dish select:focus, .age select:focus { outline: none; border-color: var(--gold-deep); box-shadow: 0 0 0 3px rgba(118, 90, 53, 0.16); }
 .dish select[aria-invalid="true"], .age select[aria-invalid="true"] { border-color: var(--error); }
+
+/* São Bento — texto novo (out/2026) */
+.benito__mid--first { margin-top: clamp(96px, 11vw, 152px); }
+.benito__turn--close { margin-top: clamp(96px, 11vw, 160px); }
+.benito__turn--close + .benito__close { margin-top: clamp(48px, 5vw, 72px); }
+@media (min-width: 900px) {
+  .godparents { align-items: start; }
+  .godparents__photo { position: sticky; top: 104px; }
+}
