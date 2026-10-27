@@ -58,8 +58,14 @@
     if (q === "pt" || q === "es") return q;
     var saved = store("bautismo-lang");
     if (saved === "pt" || saved === "es") return saved;
-    var nav = (navigator.language || "").toLowerCase();
-    return nav.indexOf("pt") === 0 ? "pt" : "es";
+    // idioma do aparelho: o primeiro da lista de preferências que seja português ou espanhol
+    var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]);
+    for (var i = 0; i < prefs.length; i++) {
+      var l = String(prefs[i] || "").toLowerCase();
+      if (l.indexOf("pt") === 0) return "pt";
+      if (l.indexOf("es") === 0) return "es";
+    }
+    return "es";
   }
 
   /* =========================================================
