@@ -33,6 +33,7 @@
         <a href="#padrinos" data-i18n="nav_godparents">Padrinos</a>
         <a href="#san-benito" data-i18n="nav_benito">San Benito</a>
         <a href="#cuando-donde" data-i18n="nav_where">Cuándo y dónde</a>
+        <a href="#menu" data-i18n="nav_menu">Menú</a>
       </nav>
       <div class="bar__tools">
         <div class="lang" role="group" aria-label="Idioma / Idioma">
@@ -331,12 +332,72 @@
           <p class="place__time">12:30</p>
           <h3 data-i18n="place2_t">Almuerzo y fiesta</h3>
           <p class="place__name" data-i18n="place2_name">Izara Barrio Privado</p>
-          <p class="place__note" data-i18n="place2_d">Terminada la ceremonia, los esperamos para celebrar juntos con un almuerzo. La cafetería sigue hasta las 18:00.</p>
+          <p class="place__note" data-i18n="place2_d">Terminada la ceremonia, los esperamos para celebrar juntos con un almuerzo.</p>
           <div class="place__map">
             <iframe title="Mapa: Izara Barrio Privado" data-src="https://maps.google.com/maps?q=-25.234958,-57.5108525&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <a class="btn btn--line" href="https://maps.app.goo.gl/pquZhgaSrctiL1sA6" target="_blank" rel="noopener" data-i18n="directions">Cómo llegar</a>
         </article>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO ============ -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="menu__head reveal">
+        <h2 id="menu-title" data-i18n="menu_title">El almuerzo</h2>
+        <p class="statement" data-i18n="menu_lead">Un almuerzo en distintos tiempos, preparado en vivo en el lugar.</p>
+        <figure class="seal">
+          <div class="seal__disc">
+            <img src="assets/img/u-catering-240.png" srcset="assets/img/u-catering-240.png 1x, assets/img/u-catering.png 2x" width="96" height="107" alt="U Catering, cocina en vivo">
+          </div>
+          <figcaption data-i18n="seal_cap">A cargo de U Catering</figcaption>
+        </figure>
+      </div>
+
+      <div class="menu__body">
+        <div class="menu__course reveal">
+          <h3 data-i18n="menu_starter">Entrada</h3>
+          <p class="menu__time" data-i18n="menu_starter_time">12:30 a 13:30</p>
+          <div class="dishline">
+            <p class="dishline__name" data-i18n="s1_n">Ensalada de burrata</p>
+            <p class="dishline__desc" data-i18n="s1_d">Con berenjena grillada, tomate confitado y brotes de rúcula.</p>
+          </div>
+          <div class="dishline">
+            <p class="dishline__name" data-i18n="s2_n">Ceviche de salmón al ají amarillo</p>
+          </div>
+          <div class="dishline">
+            <p class="dishline__name" data-i18n="s3_n">Dúo de nigiris</p>
+            <p class="dishline__desc" data-i18n="s3_d">Nigiri de salmón trufado y nigiri de salmón con manteca de miso, praliné y limón.</p>
+          </div>
+        </div>
+
+        <div class="menu__course menu__course--main reveal">
+          <h3 data-i18n="menu_mains">Platos principales</h3>
+          <p class="menu__time" data-i18n="menu_mains_time">13:30 a 15:00 · plato servido</p>
+          <div class="menu__groups">
+            <div class="menu__group">
+              <p class="menu__groupname" data-i18n="grp_carnes">Carnes rojas</p>
+              <div class="dishline">
+                <p class="dishline__name" data-i18n="d1_n">Lomito de cordero con salsa de miel y romero</p>
+                <p class="dishline__desc" data-i18n="d1_d">Con puré de batata enriquecido con miel de caña y praliné clásico.</p>
+              </div>
+            </div>
+            <div class="menu__group">
+              <p class="menu__groupname" data-i18n="grp_pescado">Pescados</p>
+              <div class="dishline">
+                <p class="dishline__name" data-i18n="d4_n">Surubí en costra cítrica</p>
+                <p class="dishline__desc" data-i18n="d4_d">Con cremoso de choclo y vinagreta de menta.</p>
+              </div>
+            </div>
+            <div class="menu__group">
+              <p class="menu__groupname" data-i18n="grp_pasta">Pastas</p>
+              <div class="dishline">
+                <p class="dishline__name" data-i18n="d5_n">Triangoli de calabaza</p>
+                <p class="dishline__desc" data-i18n="d5_d">Con emulsión de manteca clarificada y salvia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

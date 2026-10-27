@@ -7,6 +7,7 @@ window.I18N = {
     nav_godparents: "Padrinhos",
     nav_benito: "São Bento",
     nav_where: "Quando e onde",
+    nav_menu: "Cardápio",
     nav_rsvp: "Confirmar",
 
     hero_lead: "Convidamos você a celebrar<br>o batismo de",
@@ -111,7 +112,29 @@ window.I18N = {
     directions: "Como chegar",
     place2_t: "Almoço e festa",
     place2_name: "Condomínio Izara",
-    place2_d: "Terminada a cerimônia, esperamos vocês para celebrar juntos com um almoço. O café fica aberto até as 18h.",
+    place2_d: "Terminada a cerimônia, esperamos vocês para celebrar juntos com um almoço.",
+
+    menu_title: "O almoço",
+    menu_lead: "Um almoço em diferentes tempos, preparado ao vivo, ali mesmo.",
+    seal_cap: "A cargo da U Catering",
+    menu_starter: "Entrada",
+    menu_starter_time: "12h30 às 13h30",
+    s1_n: "Salada de burrata",
+    s1_d: "Com berinjela grelhada, tomate confitado e brotos de rúcula.",
+    s2_n: "Ceviche de salmão ao ají amarillo",
+    s3_n: "Duo de nigiris",
+    s3_d: "Nigiri de salmão trufado e nigiri de salmão com manteiga de missô, praliné e limão.",
+    menu_mains: "Pratos principais",
+    menu_mains_time: "13h30 às 15h · servidos à mesa",
+    grp_carnes: "Carnes vermelhas",
+    grp_pescado: "Peixes",
+    grp_pasta: "Massas",
+    d1_n: "Lombinho de cordeiro ao molho de mel e alecrim",
+    d1_d: "Com purê de batata-doce enriquecido com melado de cana e praliné clássico.",
+    d4_n: "Surubim em crosta cítrica",
+    d4_d: "Com creme de milho verde e vinagrete de hortelã.",
+    d5_n: "Triangoli de abóbora",
+    d5_d: "Com emulsão de manteiga clarificada e sálvia.",
 
     rsvp_title: "Confirmação de presença",
     rsvp_lead: "Pedimos que confirmem até <strong>sexta-feira, 30 de outubro</strong>. Basta uma resposta por família: incluam o nome de cada pessoa que vem com vocês e, no caso das crianças, a idade.",
@@ -162,7 +185,7 @@ window.I18N = {
       tally_no: "No van a poder venir.",
       closed: "El plazo para confirmar terminó. Si todavía no lo hicieron, escríbannos directamente.",
       cal_title: "Bautismo de Walter",
-      cal_details: "Misa y Bautismo a las 10:30 h en la Parroquia de las Mercedes. Almuerzo a las 12:30 h y cafetería hasta las 18:00 h en Izara Barrio Privado."
+      cal_details: "Misa y Bautismo a las 10:30 h en la Parroquia de las Mercedes. Almuerzo a las 12:30 h en Izara Barrio Privado."
     },
     pt: {
       title: "Batizado do Walter · 1º de novembro de 2026",
@@ -186,7 +209,7 @@ window.I18N = {
       tally_no: "Não vão poder vir.",
       closed: "O prazo para confirmar terminou. Se ainda não confirmaram, escrevam diretamente para nós.",
       cal_title: "Batizado do Walter",
-      cal_details: "Missa e Batismo às 10h30 na Paróquia de las Mercedes. Almoço às 12h30 e café até as 18h no Condomínio Izara."
+      cal_details: "Missa e Batismo às 10h30 na Paróquia de las Mercedes. Almoço às 12h30 no Condomínio Izara."
     }
   }
 };
