@@ -607,3 +607,33 @@ input[aria-invalid="true"] { border-color: var(--error); }
   .godparents { align-items: start; }
   .godparents__photo { position: sticky; top: 104px; }
 }
+
+/* ---------- carta para o Walter ---------- */
+.letter {
+  margin-top: var(--gap-section);
+  background: var(--cream);
+  padding: var(--gap-section) var(--margin);
+}
+.letter__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; align-items: start;
+}
+.letter__photo { grid-column: 1 / 5; position: sticky; top: 104px; }
+.letter__photo img { aspect-ratio: 2 / 3; object-fit: cover; }
+.letter__card {
+  grid-column: 6 / 13;
+  background: var(--card);
+  padding: clamp(40px, 5vw, 80px) clamp(28px, 5vw, 80px);
+}
+.letter__title { font-size: clamp(56px, 5.4vw, 84px); line-height: 1; margin-bottom: 36px; }
+.letter__body { max-width: 34em; }
+.letter__body p + p { margin-top: 1em; }
+.letter__body > p:first-child { font-style: italic; font-size: 1.12em; }
+.letter__body > p:nth-last-child(2) { font-style: italic; font-size: 1.1em; }
+.letter__closing { margin-top: 2em !important; font-style: italic; color: var(--ink-soft); }
+.letter__sign { font-size: clamp(44px, 4vw, 60px); line-height: 1; margin-top: 12px; }
+@media (max-width: 899px) {
+  .letter__inner { display: block; }
+  .letter__photo { position: static; width: min(100%, 420px); margin: 0 auto 40px; }
+  .letter__card { margin: 0 calc(var(--margin) * -1); padding: 48px 24px; }
+}
