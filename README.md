@@ -38,13 +38,7 @@ Enquanto `endpoint` estiver vazio, o formulário funciona em **modo de teste**: 
 
 Se mudar o código do script depois, use **Implantar › Gerenciar implantações › editar › Nova versão**, para manter a mesma URL.
 
-## 2. O cardápio
-
-O almoço segue a proposta do bufê para o dia: entrada de cremoso de coliflor, seis pratos principais (dois de cordeiro, dois de surubim e duas massas) e o café da tarde das 14h às 18h. O cardápio aparece no site só como informação; os convidados não escolhem prato. O número a passar ao bufê 72 horas antes é o total de pessoas que vão à festa, no *Resumen*.
-
-O texto do cardápio exibido na página fica no `index.html` (espanhol) e no `assets/js/i18n.js` (português). Para tirar um prato do cardápio, apague o bloco dele nos dois arquivos.
-
-## 3. Publicar no GitHub Pages (pelo navegador, sem instalar nada)
+## 2. Publicar no GitHub Pages (pelo navegador, sem instalar nada)
 
 1. Extraia o `batizado-walter.zip` numa pasta do computador (no Windows: botão direito › *Extrair tudo*).
 2. Em github.com, já logado como `lucasmoller9646`, clique no **+** do canto superior direito › **New repository**. Nome: `batizado-walter`. Visibilidade: **Public** (no plano gratuito o Pages só publica repositórios públicos). Não marque README, .gitignore nem licença. Clique em **Create repository**.

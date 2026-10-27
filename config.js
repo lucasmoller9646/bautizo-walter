@@ -5,9 +5,6 @@
  *           (termina em /exec). Veja o passo a passo no README.md.
  *           Enquanto estiver vazio, o formulário funciona em "modo de teste"
  *           e NÃO grava nada.
- *
- * O cardápio exibido na página fica no index.html (espanhol) e no
- * assets/js/i18n.js (português).
  */
 window.BAUTISMO_CONFIG = {
   endpoint: "https://script.google.com/macros/s/AKfycbwJYBT02wjakcQuPmUuEtm5NaGWbx8ALDDqGOgdTdRNHigjpUx14XhEBS9wlPxZWpHa/exec",

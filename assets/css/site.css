@@ -542,47 +542,6 @@ input[aria-invalid="true"] { border-color: var(--error); }
   .godparents__text { margin-top: 40px; padding-left: 0; }
 }
 
-/* ---------- cardápio ---------- */
-.menu { max-width: var(--maxw); margin: 0 auto; padding: var(--gap-section) var(--margin) 0; }
-.menu__head { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; align-items: end; }
-.menu__head h2 { grid-column: 1 / 6; margin-bottom: 0; }
-.menu__head .statement { grid-column: 7 / 13; padding-bottom: 0.3em; }
-.menu__body {
-  margin-top: clamp(56px, 6vw, 88px);
-  display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 56px; align-items: start;
-}
-.menu__course h3 { font-size: clamp(26px, 2.2vw, 32px); line-height: 1.1; margin-bottom: 20px; color: var(--gold-deep); font-style: italic; font-weight: 500; }
-.menu__course:first-child { grid-column: 1 / 5; }
-.menu__course--main { grid-column: 5 / 13; }
-.menu__groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 32px; }
-.menu__groupname { font-weight: 700; letter-spacing: 0.04em; margin-bottom: 14px; color: var(--sage-ink); }
-.dishline + .dishline { margin-top: 20px; }
-.dishline__name { font-weight: 600; font-size: 1.12em; line-height: 1.25; }
-.dishline__desc { color: var(--ink-soft); font-style: italic; margin-top: 4px; line-height: 1.4; }
-
-.coffee {
-  margin-top: clamp(72px, 8vw, 112px);
-  background: var(--cream);
-  padding: clamp(36px, 4vw, 56px);
-  display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 24px;
-}
-.coffee__head { grid-column: 1 / 5; }
-.coffee__head h3 { font-size: clamp(30px, 2.8vw, 40px); line-height: 1.05; }
-.coffee__time { margin-top: 10px; font-style: italic; color: var(--ink-soft); }
-.coffee__list {
-  grid-column: 5 / 13; list-style: none; padding: 0; margin: 0;
-  columns: 2 15em; column-gap: 40px;
-}
-.coffee__list li { break-inside: avoid; padding: 3px 0; }
-@media (max-width: 899px) {
-  .menu__head, .menu__body, .coffee { display: block; }
-  .menu__head h2 { margin-bottom: 20px; }
-  .menu__course--main { margin-top: 56px; }
-  .menu__groups { grid-template-columns: 1fr; gap: 36px; }
-  .coffee { padding: 32px 24px; }
-  .coffee__list { margin-top: 24px; }
-}
-
 /* seleção de prato no formulário */
 .dish, .age { display: flex; flex-direction: column; gap: 6px; }
 .dish label, .age label { font-size: 0.95em; color: var(--ink-soft); font-style: italic; }

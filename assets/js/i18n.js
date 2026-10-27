@@ -7,7 +7,6 @@ window.I18N = {
     nav_godparents: "Padrinhos",
     nav_benito: "São Bento",
     nav_where: "Quando e onde",
-    nav_menu: "Cardápio",
     nav_rsvp: "Confirmar",
 
     hero_lead: "Convidamos você a celebrar<br>o batismo de",
@@ -113,37 +112,6 @@ window.I18N = {
     place2_t: "Almoço e festa",
     place2_name: "Condomínio Izara",
     place2_d: "Terminada a cerimônia, esperamos vocês para celebrar juntos com um almoço. O café fica aberto até as 18h.",
-
-    menu_title: "O almoço",
-    menu_lead: "O que vamos compartilhar depois da missa.",
-    menu_starter: "Entrada",
-    starter_n: "Creme de couve-flor",
-    starter_d: "Couve-flor assada com manteiga tostada e camarões na manteiga composta.",
-    menu_mains: "Pratos principais",
-    grp_cordero: "Cordeiro",
-    grp_pescado: "Peixes",
-    grp_pasta: "Massas",
-    d1_n: "Lombinho de cordeiro ao molho de mel e alecrim",
-    d1_d: "Com purê de batata-doce enriquecido com melado de cana e praliné clássico.",
-    d2_n: "Ragu de cordeiro",
-    d2_d: "Com risoto branco.",
-    d3_n: "Surubim assado com creme de roquefort",
-    d3_d: "Com batatas confitadas e crocante de mandioca.",
-    d4_n: "Surubim em crosta cítrica",
-    d4_d: "Com creme de milho verde e vinagrete de hortelã.",
-    d5_n: "Triangoli de abóbora",
-    d5_d: "Com emulsão de manteiga clarificada e sálvia.",
-    d6_n: "Nhoque de beterraba",
-    d6_d: "Com creme de alho-poró e queijo emmental.",
-    coffee_t: "Café da tarde",
-    coffee_time: "das 14h às 18h, com café Lavazza",
-    coffee_list:
-      "<li>Chipitas</li><li>Mini vulcão de mbeju clássico</li><li>Mini scones de queijo</li>" +
-      "<li>Mini quiche lorraine de presunto e queijo</li><li>Mini medialunas com calda</li>" +
-      "<li>Muffins de limão e mirtilo</li><li>Muffins de banana e doce de leite</li>" +
-      "<li>Mini brownies com doce de leite</li><li>Mini blondies de chocolate branco com Nutella</li>" +
-      "<li>Alfajores de maisena</li><li>Mini cheesecake com calda de frutas vermelhas</li>" +
-      "<li>Mini torta de limão com merengue italiano</li><li>Mini torta de cacau recheada com ganache e damasco</li>",
 
     rsvp_title: "Confirmação de presença",
     rsvp_lead: "Pedimos que confirmem até <strong>sexta-feira, 30 de outubro</strong>. Basta uma resposta por família: incluam o nome de cada pessoa que vem com vocês e, no caso das crianças, a idade.",
